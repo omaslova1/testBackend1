@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b431dc7-ee17-48d2-aba3-9f6154c7eb0f" name="Changes" comment="message">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lesson3/RestApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson3/RestApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/api/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/api/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/dto/GetCategoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/dto/GetProductResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/dto/GetProductsResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/dto/ModifyProductTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/dto/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/utils/LoggingInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/utils/RetrofitUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5/CreateProductTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5/GetCategoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5/GetProductByIdTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5/GetProductsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5/ModifyProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/my.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/my.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +61,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/Olya/IdeaProjects/testBackend",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
@@ -66,85 +75,85 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="lesson5" />
       <recent name="lesson5.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExampleMain.getPositiveTest">
-    <configuration name="ExampleMain.getAccountInfoWithExternalTitleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GetProductsTest.getProductsPositiveTest">
+    <configuration name="GetProductByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testBackend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson4.*" />
+          <option name="PATTERN" value="lesson5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson4" />
-      <option name="MAIN_CLASS_NAME" value="lesson4.ExampleMain" />
-      <option name="METHOD_NAME" value="getAccountInfoWithExternalTitleTest" />
+      <option name="PACKAGE_NAME" value="lesson5" />
+      <option name="MAIN_CLASS_NAME" value="lesson5.GetProductByIdTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetProductByIdTest.getProductByIdPositiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testBackend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson5" />
+      <option name="MAIN_CLASS_NAME" value="lesson5.GetProductByIdTest" />
+      <option name="METHOD_NAME" value="getProductByIdPositiveTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExampleMain.getPositiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetProductByIdTest.getProductByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testBackend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson4.*" />
+          <option name="PATTERN" value="lesson5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson4" />
-      <option name="MAIN_CLASS_NAME" value="lesson4.ExampleMain" />
-      <option name="METHOD_NAME" value="getPositiveTest" />
+      <option name="PACKAGE_NAME" value="lesson5" />
+      <option name="MAIN_CLASS_NAME" value="lesson5.GetProductByIdTest" />
+      <option name="METHOD_NAME" value="getProductByIdTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExampleMain.getRecipeComplexSearchPositiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetProductsTest.getProductsPositiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testBackend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson4.*" />
+          <option name="PATTERN" value="lesson5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson4" />
-      <option name="MAIN_CLASS_NAME" value="lesson4.ExampleMain" />
-      <option name="METHOD_NAME" value="getRecipeComplexSearchPositiveTest" />
+      <option name="PACKAGE_NAME" value="lesson5" />
+      <option name="MAIN_CLASS_NAME" value="lesson5.GetProductsTest" />
+      <option name="METHOD_NAME" value="getProductsPositiveTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExampleMain.getRecipeСomplexSearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ModifyProductTest.modifyProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testBackend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson4.*" />
+          <option name="PATTERN" value="lesson5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson4" />
-      <option name="MAIN_CLASS_NAME" value="lesson4.ExampleMain" />
-      <option name="METHOD_NAME" value="getRecipeСomplexSearchTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExampleMain.getRecipesСomplexSearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testBackend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lesson4" />
-      <option name="MAIN_CLASS_NAME" value="lesson4.ExampleMain" />
-      <option name="METHOD_NAME" value="getRecipesСomplexSearchTest" />
+      <option name="PACKAGE_NAME" value="lesson5" />
+      <option name="MAIN_CLASS_NAME" value="lesson5.ModifyProductTest" />
+      <option name="METHOD_NAME" value="modifyProductTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ExampleMain.getPositiveTest" />
-        <item itemvalue="JUnit.ExampleMain.getAccountInfoWithExternalTitleTest" />
-        <item itemvalue="JUnit.ExampleMain.getRecipesСomplexSearchTest" />
-        <item itemvalue="JUnit.ExampleMain.getRecipeComplexSearchPositiveTest" />
-        <item itemvalue="JUnit.ExampleMain.getRecipeСomplexSearchTest" />
+        <item itemvalue="JUnit.GetProductsTest.getProductsPositiveTest" />
+        <item itemvalue="JUnit.GetProductByIdTest" />
+        <item itemvalue="JUnit.GetProductByIdTest.getProductByIdTest" />
+        <item itemvalue="JUnit.GetProductByIdTest.getProductByIdPositiveTest" />
+        <item itemvalue="JUnit.ModifyProductTest.modifyProductTest" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679062606564</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="message">
+      <created>1679062861084</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679062861085</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
